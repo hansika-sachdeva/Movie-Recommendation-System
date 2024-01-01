@@ -37,7 +37,7 @@ def recommend(movie):  # returns recommended movies with their posters
 similarity = pickle.load(open('similarity.pkl', 'rb'))  # gives all similarities from jupyter
 movies_dict = pickle.load(open('movies_dict.pkl', 'rb'))  # gives movie names in form of a dictionary from jupyter
 movies = pd.DataFrame(movies_dict)
-st.title('Movie Recommender System')  # title of our page
+st.title('Movie Recommendation System')  # title of our page
 selected_movie_name = st.selectbox('Select Movie of your choice ',
                                    movies['title'].values)  # making a drop-down menu containing titles of movies
 
